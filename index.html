@@ -1,4 +1,4 @@
-﻿<html lang="en">
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Angular Material style sheet -->
@@ -718,41 +718,41 @@
                                     headerRows: 0,
                                     // keepWithHeaderRows: 1,
                                     body: [
-                                        [
-											{
-												text: $scope.user.sellerGSTIN ? 'GST No.: ' + $scope.user.sellerGSTIN : '', 
-												bold: true,
-                                                fontSize: 12,
-												color: 'blue',
-                                                colSpan: 2,
-												alignment:'left',
-												border: [true, true, false, false],//left,top,right, boottom
-                                            },
-                                            '',
-											// {
-											// 	text: $scope.user.billType, 
-											// 	bold: true,
-                                            //     fontSize: 11,
-											// 	color: 'blue',
-                                            //     colSpan: 3,
-											// 	alignment:'right',
-											// 	border: [false, true, false, false],//left,top,right, boottom
-                                            // },
-											{
-												text:'',
-												border: [false, true, false, false]
-											},
-                                            {
-												text: $scope.user.sellerMobile ? 'M.' + $scope.user.sellerMobile : '',
-												bold: true,
-                                                fontSize: 12,
-												color: 'blue',
-												colSpan: 2,
-                                                alignment:'right',
-												border: [false, true, true, false],//left,top,right, boottom
-                                            },
-											''
-                                        ],
+                                        // [
+										// 	{
+										// 		text: '',//$scope.user.sellerGSTIN ? 'GST No.: ' + $scope.user.sellerGSTIN : '', 
+										// 		bold: true,
+                                        //         fontSize: 12,
+										// 		color: 'blue',
+                                        //         colSpan: 2,
+										// 		alignment:'left',
+										// 		border: [true, true, false, false],//left,top,right, boottom
+                                        //     },
+                                        //     '',
+										// 	// {
+										// 	// 	text: $scope.user.billType, 
+										// 	// 	bold: true,
+                                        //     //     fontSize: 11,
+										// 	// 	color: 'blue',
+                                        //     //     colSpan: 3,
+										// 	// 	alignment:'right',
+										// 	// 	border: [false, true, false, false],//left,top,right, boottom
+                                        //     // },
+										// 	{
+										// 		text:'',
+										// 		border: [false, true, false, false]
+										// 	},
+                                        //     {
+										// 		text: '',//$scope.user.sellerMobile ? 'M.' + $scope.user.sellerMobile : '',
+										// 		bold: true,
+                                        //         fontSize: 12,
+										// 		color: 'blue',
+										// 		colSpan: 2,
+                                        //         alignment:'right',
+										// 		border: [false, true, true, false],//left,top,right, boottom
+                                        //     },
+										// 	''
+                                        // ],
 										[
                                             {
                                                 bold: true,
@@ -761,7 +761,7 @@
                                                 text: $scope.user.sellerName,
                                                 colSpan: 5,
 												alignment:'center',
-												border: [true, false, true, false],//left,top,right, boottom
+												border: [true, true, true, false],//left,top,right, boottom
                                                 //rowSpan: 4
                                             },
                                             '',
@@ -807,6 +807,38 @@
                                             {
                                                 //bold: true,
                                                 fontSize: 11,
+                                                text: 'MOBILE NO.: 9998726205', 
+												color: 'blue',
+                                                colSpan: 5,
+												alignment:'center',
+												lineHeight:1,
+                                                rowSpan: 1
+                                            },
+                                            '',
+											'',
+                                            '',
+                                            ''
+                                        ],
+                                        [
+                                            {
+                                                //bold: true,
+                                                fontSize: 11,
+                                                text: 'GST NO: 24CZQPM5962A1Z7', 
+												color: 'blue',
+                                                colSpan: 5,
+												alignment:'center',
+												lineHeight:1,
+                                                rowSpan: 1
+                                            },
+                                            '',
+											'',
+                                            '',
+                                            ''
+                                        ],
+                                        [
+                                            {
+                                                //bold: true,
+                                                fontSize: 11,
                                                 text: 'COMPOSITION TAXABLE PERSON, NOT ELIGIBLE TO COLLECT TAX', 
 												color: 'blue',
                                                 colSpan: 5,
@@ -819,7 +851,6 @@
                                             '',
                                             ''
                                         ],
-                                        
                                         [
                                             {
                                                 bold: true,
@@ -1012,7 +1043,7 @@
                     var c1 = data.slice();
 
                     if (test1.length > 0) {
-                        [].splice.apply(c1, [8, 0].concat(test1));
+                        [].splice.apply(c1, [9, 0].concat(test1));
                     }
                     dd.content[0].table.body = c1;
 
